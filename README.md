@@ -1,6 +1,6 @@
 # VAULT Chrome Extension
 
-A Chrome extension that syncs your [VAULT](vault.sizo.dev) services and automatically fills passwords on matching websites.
+A Chrome extension that syncs your [VAULT](https://vault.sizo.dev) services and automatically fills passwords on matching websites
 
 ## Features
 
@@ -12,13 +12,13 @@ A Chrome extension that syncs your [VAULT](vault.sizo.dev) services and automati
 ## Requirements
 
 - Google Chrome version 88 or higher
-- Access to [VAULT](vault.sizo.dev) or a local instance
+- Access to [VAULT](https://vault.sizo.dev) or a local instance
 
 ## Installation
 
 ### Step 1: Download the Extension
 
-Download the extension source code from the repository.
+Download the extension source code from the repository
 
 ### Step 2: Copy the Folder
 
@@ -47,12 +47,12 @@ In the top-right corner of the extensions page, toggle **"Developer mode"**
 
 ### First Time
 
-1. Sync your account from [vault.sizo.dev](vault.sizo.dev) or your local VAULT instance.
+1. Sync your account from [vault.sizo.dev](https://vault.sizo.dev) or your local VAULT instance
 2. Click the VAULT icon in the Chrome toolbar
 3. The extension panel will open
 4. Select your VAULT account
 5. Enter your master password
-6. You'll see all the services in your account.
+6. You'll see all the services in your account
 
 ### Filling Passwords
 
@@ -63,8 +63,8 @@ In the top-right corner of the extensions page, toggle **"Developer mode"**
 
 ## Security
 
-- The extension does not store any passwords.
-- The extension only accesses data from the services stored in your VAULT.
+- The extension does not store any passwords
+- The extension only accesses data from the services stored in your VAULT
 
 ## Troubleshooting
 
@@ -77,11 +77,11 @@ In the top-right corner of the extensions page, toggle **"Developer mode"**
 
 - Reload the extension from `chrome://extensions/`
 - Check your internet connection
-- Try syncing your account again from [vault.sizo.dev](vault.sizo.dev) or your local instance
+- Try syncing your account again from [vault.sizo.dev](https://vault.sizo.dev) or your local instance
 
 ## Support
 
-For more information about VAULT, visit: [vault.sizo.dev](vault.sizo.dev)
+For more information about VAULT, visit [vault.sizo.dev](https://vault.sizo.dev)
 
 ## License
 

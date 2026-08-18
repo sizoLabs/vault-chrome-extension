@@ -76,7 +76,6 @@ In the top-right corner of the extensions page, toggle **"Developer mode"**
 ### Synchronization Errors
 
 - Reload the extension from `chrome://extensions/`
-- Check your internet connection
 - Try syncing your account again from [vault.sizo.dev](https://vault.sizo.dev) or your local instance
 
 ## Support

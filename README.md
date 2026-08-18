@@ -18,7 +18,7 @@ A Chrome extension that syncs your [VAULT](https://vault.sizo.dev) services and 
 
 ### Step 1: Download the Extension
 
-Download the extension source code from the repository
+Download the extension [source code](https://github.com/sizoLabs/vault-chrome-extension/releases/latest)
 
 ### Step 2: Copy the Folder
 

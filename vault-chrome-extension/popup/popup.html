@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAULT Chrome Extension</title>
+    <link rel="stylesheet" href="./popup.css" />
+    <link rel="stylesheet" href="../libs/tabler-icons.min.css" />
+    <script src="../libs/tailwindcss.js"></script>
+  </head>
+  <body>
+    <main class="bg-[#1F2021] text-white min-w-110 min-h-0 p-3">
+
+      <header class="bg-white/5 squircle-md px-5 py-3 flex flex-row justify-between border border-white/10 mb-2">
+        <div class="flex flex-row justify-left items-left">
+            <a href="https://vault.sizo.dev" target="_blank" class="text-2xl font-inter font-black">
+                VAULT
+                <i class="ti ti-vault text-2xl ml-0.5 align-middle -mt-1 inline-block"></i>
+            </a>
+        </div>
+        <div id="account-header" class="hidden flex items-center gap-2">
+          <i id="account-icon" class="ti ti-user text-base text-white/70"></i>
+          <div id="account-name" class="text-sm font-inter font-bold text-white/60"></div>
+        </div>
+      </header>
+
+      <div id="alert-container" class="hidden font-bold alert-container bg-white/5 border border-white/10 squircle-md px-5 py-3 text-[15px] mb-2"></div>
+
+      <section id="account-panel" class="hidden">
+
+        <div id="no-master-password-warning" class="hidden bg-amber-500/10 border border-amber-500/30 squircle-md px-5 py-3 text-[15px] mb-2 text-amber-500">
+          No master password verification active. Passwords will be generated with the password you enter.
+        </div>
+
+        <div class="flex flex-col bg-white/5 squircle-md px-5 py-3 mb-2 border border-white/10">
+
+          <div id="account-dropdown-container" class="relative mb-2">
+            <button id="account-dropdown-button" class="text-md font-inter-medium h-fit w-full squircle-md px-5 py-3 border duration-300 bg-white/5 border-white/20 focus:bg-white/10 focus:border-white/50 hover:bg-white/10 hover:border-white/50 hover:text-white flex items-center justify-center text-center cursor-pointer">
+              <span class="flex min-w-0 items-center gap-2 text-left text-lg">
+                <i id="account-dropdown-icon" class="ti ti-user"></i>
+                <span id="account-dropdown-label" class="truncate">Select an account</span>
+              </span>
+              <i id="account-dropdown-chevron" class="ti ti-chevron-down ml-2"></i>
+            </button>
+            <ul id="account-dropdown-menu" class="hidden absolute left-0 right-0 mt-0.5 max-h-[80px] overflow-y-auto squircle-md bg-white/5 backdrop-blur-xl border border-white/30 z-50"></ul>
+          </div>
+
+          <select id="account-select" class="hidden"></select>
+  
+          <input id="master-password" type="password" class="bg-white/5 hover:bg-white/10 hover:border-white/20 duration-300 border border-white/10 outline-0 px-5 py-3 mb-2 squircle-md text-[16px]" placeholder="Enter your Master Password" />
+  
+          <button id="unlock-button" class="duration-300 hover:bg-indigo-500/20 hover:border-indigo-500 bg-indigo-500/20 border border-indigo-500/50 squircle-md px-6 py-3 outline-0 text-[16px] font-inter font-bold text-white/60 hover:text-white" type="button">
+            Unlock Account
+          </button>
+
+        </div>
+
+      </section>
+
+      <section id="results-panel" class="hidden mt-2">
+
+        <div class="w-full relative">
+          <input id="search-input" class="bg-white/10 hover:bg-white/15 hover:border-white/50 duration-300 border border-white/30 outline-0 pl-13 px-5 py-3 mb-2 squircle-md text-[16px] w-full" type="text" placeholder="Search services..." autocomplete="off" />
+            <i class="ti ti-search text-[25px] absolute left-4.5 top-6.25 -translate-y-1/2 text-white/50"></i>
+        </div>
+
+        <div id="service-list" class="flex flex-row flex-wrap justify-around gap-1"></div>
+
+        <div id="no-search-results" class="hidden px-6 py-3 text-center bg-white/2 border border-white/10 squircle-md text-xs text-white/30">
+          No services match this search...
+        </div>
+
+      </section>
+
+    </main>
+
+    <script type="module" src="./shared.js"></script>
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>
